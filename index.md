@@ -58,15 +58,18 @@ Tools used:
 My goal with this analysis was to initially determine what the "best" propulsion system was. This quickly changed to determining which mission role each propulsion system was best suited for. I purposefully kept the systems list small (15 total) as I wanted to focus on existing, proven systems. Despite this, I ended up including systems that haven't flown or are purely theoretical as additional information to help create a better analysis.
 
 A brief rundown of the metrics which were measured:
-- Maximum Specific Impulse (Isp, seconds) - This is the time in seconds it takes for a propulsion system to empty its fuel supply. Generally used as a measure of fuel efficiency alongside other metrics.
-- Maximum Thrust-to-weight Ratio - Specifically used in the comparison of chemical propulsion systems, this is typically used to help determine whether a rocket system can take off from within Earth's atmosphere.
-- Maximum Thrust (N) - The maximum amount of force that an engine can output.
-- Maximum Input Power (kW) - The maximum amount of electrical power needed to run an engine.
+- **Maximum Specific Impulse** (Isp, seconds) - This is the time in seconds it takes for a propulsion system to empty its fuel supply. Generally used as a measure of fuel efficiency alongside other metrics.
+- **Maximum Thrust-to-weight Ratio** - Specifically used in the comparison of chemical propulsion systems, this is typically used to help determine whether a rocket system can take off from within Earth's atmosphere.
+- **Maximum Thrust** (N) - The maximum amount of force that an engine can output.
+- **Maximum Input Power** (kW) - The maximum amount of electrical power needed to run an engine.
 
 The analysis yielded the following data:
 - Chemical systems are the only current systems capable of escaping Earth's atmosphere. They do this with a large thrust and a short specific impulse, meaning that they can produce large amounts of force but can only sustain it for a short time.
+    - Most Chemical systems are best suited for missions where they are lifting payloads out of an atmosphere or across long distances. However, there are specific Chemical systems which are used for attitude (orientation) correction on space stations.
 - Theoretical and tested Nuclear systems are capable of generating even larger amounts of thrust with a longer specific impulse, allowing for travel across longer distances in space.
+    - If proven, Nuclear systems would be well-suited for long-distance space travel due to their good thrust and long specific impulse. However, in regards to lifting rockets, there is reasonable concern that Nuclear-powered propulsion systems would not be well-suited for in-atmosphere operation.
 - Electric systems are incapable of escaping Earth's atmosphere due to extremely low thrust, but are unmatched in efficient, sustained space travel (albeit at a slower pace) due to a very long specific impulse.
+    - Most Electric systems are best suited for satellite propulsion due to their great fuel efficiency. The low speed is less of a concern as satellite components are built to last the duration of their mission.
 
 Notes and unexpected data:
 - Each category has their own strengths and weaknesses, with subdivisions within categories further expanding or contracting those metrics. That is to say, propulsion systems are rarely complete upgrades over another propulsion system from another category or even from within the same category.
@@ -78,8 +81,6 @@ Tools used:
 - MySQL Server/Workbench - Data storage
 - Python (pandas, pytest) - Data analysis, verification
 - Power BI, Data visualization
-
-*Python (pandas) · MySQL · Excel · Power BI · 26 tests*
 
 [Read the full report](https://jhekwall.github.io/spacecraft-propulsion-2025/) / [View the report repository](https://github.com/JheKWall/spacecraft-propulsion-2025)
 
