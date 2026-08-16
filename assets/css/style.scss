@@ -1,0 +1,20 @@
+---
+# The two dashed lines above are REQUIRED front matter.
+# Without them Jekyll copies this file verbatim and the @import never runs.
+---
+
+@import "{{ site.theme }}";
+
+.main-content {
+  max-width: 60rem;
+}
+
+.main-content img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Section rules between projects, a little more air than the default. */
+.main-content hr {
+  margin: 3rem 0;
+}
