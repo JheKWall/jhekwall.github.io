@@ -6,7 +6,7 @@ I have a passion for game development, which I do in my spare time. Besides that
 
 You can reach me at jhekwall@ut.utm.edu (academic inquiries) or wallacejhems@gmail.com (professional inquiries).
 
-You can also find me on LinkedIn at https://www.linkedin.com/in/jhems-wallace/
+You can also find me on LinkedIn at [www.linkedin.com/in/jhems-wallace/](https://www.linkedin.com/in/jhems-wallace/)
 
 ---
 
