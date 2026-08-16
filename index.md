@@ -86,26 +86,36 @@ Tools used:
 
 ### Comparison of 3D Game Development Engines (2024)
 
-**Senior capstone · CSCI 495 · presented at ACM**
+*Project run from 2023-2024*
 
-Comparing Godot, Unity, and Unreal Engine from a year of building DATASPIRE, a 3D
-first-person action platformer, in Godot.
+This project was done for my CSCI Senior Design Project class, with my team consisting of myself and my classmate Vance. Our goal with this project was to determine whether or not Godot was a viable 3D-game-development engine compared to more mainstream game engines such as Unity or Unreal. We developed the same game, a 3D, first-person action platformer, in Godot, Unity, and Unreal and compiled our experiences in developing the game in all three engines. Additionally, we explored various metrics such as whether an engine had licensing fees, how much it cost (in terms of performance and space) to run on a computer, and the quality/quantity of documentation and tutorials (official or community-made).
 
-- Every claim is tagged **built** or **documented**. We used Godot daily for a year; we read
-  the other two engines' documentation and never shipped in them. An engine comparison is
-  worth reading only if it is clear which parts are experience and which are reading.
-- **A five-year feature gap**, verified: Godot's stair-stepping proposal was opened in May
-  2021 and is still open, asking for essentially the parameter Unity already ships.
-- **A correction to our own conference conclusion.** We told ACM that Godot and Unreal level
-  loading were "similarly easy." Our own slide listed three advantages for Unreal. The
-  accurate version is that Godot's approach is simpler and Unreal's is more capable.
-- **Which engine costs more depends on platform and scale, and the ranking inverts.**
-  The engine choice itself was decided by a licensing announcement that was retracted before
-  we presented.
+For this project we used three specific versions of these game engines:
+- Godot 4.2.2
+- Unity 2023.1.13f1
+- Unreal Engine 5.3
 
-*Godot 4.3 · GDScript · Blender · TrenchBroom*
+The project yielded the following data:
+- Godot was very light-weight in comparison to the other engines. It was quicker to start up, and took much less storage to install. This allowed us to develop our game from a larger range of devices, from our home desktops to our school-provided checkout laptops.
+- Godot lacked various standard implementations present in the other game engines.
+    - One of the more notable examples was stair-stepping. This is essentially how player characters are able to move up stepped surfaces without colliding into them and stopping movement. Unity and Unreal both had default implementations, while we were forced to implement our own (less than optimal) approach in Godot.
+- Godot is completely free and open-source, allowing anyone to contribute to the development of the engine or to use it at no cost.
+    - We ended up submitting our stair-stepping approach to an ongoing discussion about a standard stair-stepping implementation in Godot.
+    - Other engines such as Unity or Unreal have licensing fees attached to them which adds a monetary cost to using their engine. This cost largely depends on the platforms you're developing for and the scale at which you wish to deploy your game.
+- Generally, Godot has less built-in features and requires a more in-depth understanding of game mechanics as you need to implement them yourself. Despite this, it's relatively easy to learn due to its Python-like programming language (GDScript) and node-scene architecture.
+- Godot's documentation is on-par with Unity and Unreal's documentation. However, in terms of tutorials, Godot falls behind due to its newer age compared to the other development engines.
 
-[**Read the report →**](https://jhekwall.github.io/game-dev-engines-2024/) · [Repository](https://github.com/JheKWall/game-dev-engines-2024)
+Notes and unexpected data:
+- Godot first started as a 2D-game-development engine and only recently expanded to 3D-game development with the release of Godot 4 in early 2023. Since then, it has been consistently updated in response to feedback from the community.
+
+Tools used:
+- Godot 4.2.2
+- Unity 2023.1.13f1
+- Unreal Engine 5.3
+- Blender
+- TrenchBroom
+
+[Read the full report](https://jhekwall.github.io/game-dev-engines-2024/) / [View the report repository](https://github.com/JheKWall/game-dev-engines-2024)
 
 ---
 
