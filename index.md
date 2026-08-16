@@ -1,7 +1,3 @@
-[github.com/JheKWall](https://github.com/JheKWall)
-
----
-
 # General Information
 
 I'm a CSCI graduate from UTM who is working part-time at UTM's ITS Department to continue gathering work experience in the IT field. Besides my programming knowledge in C, C++, C#, Java, Javascript, and Python, I have experience within penetration testing, mobile device management, relational database management, comparative analysis, and network engineering.
@@ -14,39 +10,42 @@ You can also find me on LinkedIn at https://www.linkedin.com/in/jhems-wallace/
 
 ---
 
-## Analysis Projects
+## Analysis Projects:
 
 ### Student Completion Outcomes at UT Martin and Nearby Institutions (2026)
-**Data sourced from [IPEDS](https://nces.ed.gov/ipeds/)**
+*Data sourced from [IPEDS](https://nces.ed.gov/ipeds/)*
 
-My goal with this analysis was to measure the completion outcomes of cohorts from 2009-10 to 2016-2017 at UT Martin and nearby institutions alongside cost-of-living data from the same timeframe to determine if there was any credible evidence of a correlation between completion rates and cost-of-living in the area around an institution. This analysis covered eight cohorts (freshmen who entered in the same academic year) across five institutions:
+My goal with this analysis was to measure the completion outcomes of cohorts from 2009-10 to 2016-2017 at UT Martin and nearby institutions alongside institution-reported living expenses from the same timeframe to determine if there was any correlation between completion rates and cost-of-living in the area around an institution.
 
-1. Arkansas Northeastern College
-2. Dyersburg State Community College
-3. Jackson State Community College
-4. Murray State University
-5. The University of Tennessee at Martin
+This analysis covered eight cohorts (freshmen who entered in the same academic year) across five institutions:
+
+1. Arkansas Northeastern College (ANC)
+2. Dyersburg State Community College (DSCC)
+3. Jackson State Community College (JSCC)
+4. Murray State University (MSU)
+5. The University of Tennessee at Martin (UTM)
 
 The analysis yielded the following data:
 - Completion rates broadly improved at every institution over the timeframe, with community colleges (two-year institutions) increasing the most.
-- UT Martin and Murray State University, the two four-year institutions in the dataset, held a completion rate around ~50% for the entire timeframe.
-- Arkansas Northeastern College, Dyersburg State Community College, and Jackson State Community College, the three two-year institutions in the dataset, hold lower completion rates than the four-year institutions. Arkansas Northeastern College proved to be an outlier after its completion rate rose from 28.1% with its 2009-10 cohort to 54.7% with its 2016-17 cohort, exceeding UT Martin's highest completion rate of 52.5%.
-- There is no significant correlation between the local cost of living in the immediate area around an institution and the completion rate for a cohort that attended the institution.
+- Between UTM and MSU, the two four-year institutions in the dataset, UTM held a completion rate around ~50% for the entire timeframe while MSU rose to ~60%.
+- ANC, DSCC, and JSCC, the three two-year institutions in the dataset, hold lower completion rates than the four-year institutions. ANC proved to be an outlier after its completion rate rose from 28.1% with its 2009-10 cohort to 54.7% with its 2016-17 cohort, exceeding UT Martin's highest completion rate of 52.5%.
+- The data cannot support a conclusion that the institution-reported living expenses and the completion rate for a cohort are correlated.
 
 Notes and unexpected data:
-- Arkansas Northeastern College's increased completion rate is abnormal in comparison to the other two-year institutions, putting it on par with the completion rates of four-year institutions like UT Martin and Murray State University.
-- Arkansas Northeastern College's reported living expenses dropped from ~18K+ in 2013-2014 to ~10K+ in 2014-15. This significant drop was less likely to be an actual drop in cost of living around the institution and more likely to be caused by a change in reporting methodology.
-- UT Martin did not begin reporting living expenses until 2012-13 (the rest of the dataset starts from 2009-10).
+- Cohorts are all first-time, full-time freshmen from the same academic year (fall to summer). These cohorts are measured across the next seven academic years.
+- ANC's increased completion rate is abnormal in comparison to the other two-year institutions, putting it on par with the completion rates of four-year institutions like UT Martin and Murray State University.
+- ANC's reported living expenses dropped from ~18K+ in 2013-2014 to ~10K+ in 2014-15. This significant drop was less likely to be an actual drop in institution-reported living expenses and more likely to be caused by a change in reporting methodology.
+- UTM did not begin reporting living expenses until 2012-13 (the rest of the dataset starts from 2009-10).
 
 Data sources:
 - [IPEDS Complete Data Files](https://nces.ed.gov/ipeds/complete-data-files), National Center for Education Statistics
-  - `HD2025` — Institutional Directory (names, sector, county)
-  - `OM2017`–`OM2024` — Outcome Measures, eight entering cohorts (2009-10 to 2016-17)
-  - `IC2012_AY`, `IC2016_AY`, `IC2019_AY`, `IC2023_AY` — Institutional Characteristics, cost of attendance: living expenses (2009-10 to 2023-24)
+  - **HD2025** — Institutional Directory (names, sector, county)
+  - **OM2017**–**OM2024** — Outcome Measures, eight entering cohorts (2009-10 to 2016-17)
+  - **IC2012_AY**, **IC2016_AY**, **IC2019_AY**, **IC2023_AY** — Institutional Characteristics, cost of attendance: living expenses (2009-10 to 2023-24)
 
 Tools used:
 - Claude - General assistance and data verification
-- Excel - Data storage
+- Excel - Reporting output
 - MySQL Server/Workbench - Data storage
 - Python (pandas, pytest) - Data analysis, verification
 - Power BI - Data visualization
@@ -104,7 +103,7 @@ first-person action platformer, in Godot.
 
 ---
 
-## Programming Projects and Assignments
+## Programming Projects and Assignments:
 
 ### Unit Testing Implementation for a Banking System
 
