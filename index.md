@@ -53,30 +53,35 @@ Tools used:
 [Read the full report](https://jhekwall.github.io/utm-ipeds-2026/) / [View the report repository](https://github.com/JheKWall/utm-ipeds-2026)
 
 ### Comparison of Spacecraft Propulsion Systems (2025)
+*Data sourced from multiple studies*
 
-**15 systems · 40 individually cited figures · 22 sources**
+My goal with this analysis was to initially determine what the "best" propulsion system was. This quickly changed to determining which mission role each propulsion system was best suited for. I purposefully kept the systems list small (15 total) as I wanted to focus on existing, proven systems. Despite this, I ended up including systems that haven't flown or are purely theoretical as additional information to help create a better analysis.
 
-Which mission role is each category of spacecraft propulsion best suited for? Chemical,
-electric, and nuclear compared on specific impulse, thrust, input power, and
-thrust-to-weight ratio, separating flight-proven hardware from prototypes and theory.
+A brief rundown of the metrics which were measured:
+- Maximum Specific Impulse (Isp, seconds) - This is the time in seconds it takes for a propulsion system to empty its fuel supply. Generally used as a measure of fuel efficiency alongside other metrics.
+- Maximum Thrust-to-weight Ratio - Specifically used in the comparison of chemical propulsion systems, this is typically used to help determine whether a rocket system can take off from within Earth's atmosphere.
+- Maximum Thrust (N) - The maximum amount of force that an engine can output.
+- Maximum Input Power (kW) - The maximum amount of electrical power needed to run an engine.
 
-- **Nothing is best in the abstract, only best for a job.** Chemical is the only category
-  that can launch; electric wins sustained efficiency; nuclear occupies an attractive middle
-  that has never flown.
-- **Ranking on specific impulse alone misleads.** The two highest-scoring systems have never
-  been built — one at 2,370× the best hardware ever fired.
-- **Thrust-to-weight is computable for only 8 of 15 systems.** The metric that answers "can
-  this leave the ground" is the one least often published.
-- **A unit error in a peer-reviewed source.** A published table gives antimatter an exhaust
-  velocity 333× the speed of light; the same paper's body text gives the correct figure. The
-  original transcription was faithful — the error is upstream.
+The analysis yielded the following data:
+- Chemical systems are the only current systems capable of escaping Earth's atmosphere. They do this with a large thrust and a short specific impulse, meaning that they can produce large amounts of force but can only sustain it for a short time.
+- Theoretical and tested Nuclear systems are capable of generating even larger amounts of thrust with a longer specific impulse, allowing for travel across longer distances in space.
+- Electric systems are incapable of escaping Earth's atmosphere due to extremely low thrust, but are unmatched in efficient, sustained space travel (albeit at a slower pace) due to a very long specific impulse.
 
-Every figure in the dataset carries its citation, page number, and a verbatim quote of the
-sentence it came from.
+Notes and unexpected data:
+- Each category has their own strengths and weaknesses, with subdivisions within categories further expanding or contracting those metrics. That is to say, propulsion systems are rarely complete upgrades over another propulsion system from another category or even from within the same category.
+- It is wrong to rank by a single metric such as specific impulse or maximum thrust as they do not provide enough information to justify any use on their own.
+- Thrust-to-weight ratio is only computable for 8 out of 15 systems due to a lack of information (non-published specifications).
+
+Tools used:
+- Excel - Reporting output
+- MySQL Server/Workbench - Data storage
+- Python (pandas, pytest) - Data analysis, verification
+- Power BI, Data visualization
 
 *Python (pandas) · MySQL · Excel · Power BI · 26 tests*
 
-[**Read the report →**](https://jhekwall.github.io/spacecraft-propulsion-2025/) · [Repository](https://github.com/JheKWall/spacecraft-propulsion-2025)
+[Read the full report](https://jhekwall.github.io/spacecraft-propulsion-2025/) / [View the report repository](https://github.com/JheKWall/spacecraft-propulsion-2025)
 
 ### Comparison of 3D Game Development Engines (2024)
 
