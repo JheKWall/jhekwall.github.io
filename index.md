@@ -111,19 +111,19 @@ first-person action platformer, in Godot.
 
 ## Programming Projects and Assignments:
 
-### Unit Testing Implementation for a Banking System
+### [Unit Testing Implementation for a Banking System](https://github.com/JheKWall/CW13-Unit-Testing)
 
 
 
-### Programming Databses in WPF Applications
+### [Programming Databses in WPF Applications](https://github.com/JheKWall/CW6WPF)
 
 
 
-### Threading Experimentation
+### [Threading Experimentation](https://github.com/JheKWall/CW9-Threading)
 
 
 
-### Process Management and Scheduling Simulation
+### [Process Management and Scheduling Simulation](https://github.com/JheKWall/JKW-CSCI485)
 
 
 
