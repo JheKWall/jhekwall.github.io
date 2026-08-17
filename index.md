@@ -1,8 +1,8 @@
 # General Information
 
-I'm a CSCI graduate from UTM who is working part-time at UTM's ITS Department to continue gathering work experience in the IT field. Besides my programming knowledge in C, C++, C#, Java, Javascript, and Python, I have experience within penetration testing, mobile device management, relational database management, comparative analysis, and network engineering.
+I'm a CSCI graduate from UTM who is working part-time at UTM's ITS Department to continue gathering work experience in the IT field. Besides my programming knowledge in C, C++, C#, Java, Javascript, and Python, I have experience with comparative analysis, relational database management, penetration testing, mobile device management, and network engineering.
 
-I have a passion for game development, which I do in my spare time. Besides that, I've been studying for the CCNA and aiming to take the exam in December to receive CCNA certification to gain more experience in network engineering.
+I have a passion for game development, which I do in my spare time. Besides that, I've been studying for the CCNA and aim to take the exam in December to receive a CCNA certification to gain more experience in network engineering.
 
 You can reach me at jhekwall@ut.utm.edu (academic inquiries) or wallacejhems@gmail.com (professional inquiries).
 
