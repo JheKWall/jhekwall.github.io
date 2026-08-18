@@ -17,7 +17,7 @@ You can also find me on LinkedIn at [www.linkedin.com/in/jhems-wallace/](https:/
 
 My goal with this analysis was to measure the completion outcomes of cohorts from 2009-10 to 2016-17 at UT Martin and nearby institutions alongside institution-reported living expenses from the same timeframe, to determine whether there was any correlation between the two.
 
-Institution-reported living expenses are a financial aid office's estimated student budget — housing, food, and other necessities, excluding tuition. They are an administrative estimate, not a measurement of local prices, and institutions use differing methodologies to produce them.
+Institution-reported living expenses are a financial aid office's estimated student budget: housing, food, and other necessities, excluding tuition. They are an administrative estimate, not a measurement of local prices, and institutions use differing methodologies to produce them.
 
 This analysis covered eight cohorts (freshmen who entered in the same academic year) across five institutions:
 
