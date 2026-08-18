@@ -15,7 +15,9 @@ You can also find me on LinkedIn at [www.linkedin.com/in/jhems-wallace/](https:/
 ### Student Completion Outcomes at UT Martin and Nearby Institutions (2026)
 *Data sourced from [IPEDS](https://nces.ed.gov/ipeds/)*
 
-My goal with this analysis was to measure the completion outcomes of cohorts from 2009-10 to 2016-2017 at UT Martin and nearby institutions alongside institution-reported living expenses from the same timeframe to determine if there was any correlation between completion rates and cost-of-living in the area around an institution.
+My goal with this analysis was to measure the completion outcomes of cohorts from 2009-10 to 2016-17 at UT Martin and nearby institutions alongside institution-reported living expenses from the same timeframe, to determine whether there was any correlation between the two.
+
+Institution-reported living expenses are a financial aid office's estimated student budget — housing, food, and other necessities, excluding tuition. They are an administrative estimate, not a measurement of local prices, and institutions use differing methodologies to produce them.
 
 This analysis covered eight cohorts (freshmen who entered in the same academic year) across five institutions:
 
@@ -34,7 +36,7 @@ The analysis yielded the following data:
 Notes and unexpected data:
 - Cohorts are all first-time, full-time freshmen from the same academic year (fall to summer). These cohorts are measured across the next seven academic years.
 - ANC's increased completion rate is abnormal in comparison to the other two-year institutions, putting it on par with the completion rates of four-year institutions like UT Martin and Murray State University.
-- ANC's reported living expenses dropped from ~18K+ in 2013-2014 to ~10K+ in 2014-15. This significant drop was less likely to be an actual drop in institution-reported living expenses and more likely to be caused by a change in reporting methodology.
+- ANC's reported living expenses fell from $18,575 in 2013-14 to $10,524 in 2014-15, a 43% drop in a single year. This is unlikely to reflect a real change in what students spent, and is more likely a change in the institution's reporting methodology.
 - UTM did not begin reporting living expenses until 2012-13 (the rest of the dataset starts from 2009-10).
 
 Data sources:
@@ -58,15 +60,15 @@ Tools used:
 My goal with this analysis was to initially determine what the "best" propulsion system was. This quickly changed to determining which mission role each propulsion system was best suited for. I purposefully kept the systems list small (15 total) as I wanted to focus on existing, proven systems. Despite this, I ended up including systems that haven't flown or are purely theoretical as additional information to help create a better analysis.
 
 A brief rundown of the metrics which were measured:
-- **Maximum Specific Impulse** (Isp, seconds) - This is the time in seconds it takes for a propulsion system to empty its fuel supply. Generally used as a measure of fuel efficiency alongside other metrics.
+- **Maximum Specific Impulse** (Isp, seconds) - A measure of propellant efficiency: how much thrust a system produces per unit of propellant weight consumed per second. A higher Isp means more total impulse from the same mass of propellant. The unit is seconds, but it is not a burn time (a 4220-second ion thruster runs for years, not seventy minutes).
 - **Maximum Thrust-to-weight Ratio** - Specifically used in the comparison of chemical propulsion systems, this is typically used to help determine whether a rocket system can take off from within Earth's atmosphere.
 - **Maximum Thrust** (N) - The maximum amount of force that an engine can output.
 - **Maximum Input Power** (kW) - The maximum amount of electrical power needed to run an engine.
 
 The analysis yielded the following data:
 - Chemical systems are the only current systems capable of escaping Earth's atmosphere. They do this with a large thrust and a short specific impulse, meaning that they can produce large amounts of force but can only sustain it for a short time.
-    - Most Chemical systems are best suited for missions where they are lifting payloads out of an atmosphere or across long distances. However, there are specific Chemical systems which are used for attitude (orientation) correction on space stations.
-- Theoretical and tested Nuclear systems are capable of generating even larger amounts of thrust with a longer specific impulse, allowing for travel across longer distances in space.
+    - Most Chemical systems are best suited for missions where they are lifting payloads out of an atmosphere or across long distances. However, there are specific Chemical systems which are designed for more niche roles such as attitude (orientation) correction on space stations.
+- Tested and theoretical Nuclear systems pair roughly double the specific impulse of chemical systems with thrust of a broadly comparable order, which is what makes them attractive for long-distance travel in space. They do not out-thrust chemical systems (the RS-25 produces about 2.2 million N vs NERVA NRX's ~330,000 N) but they deliver thrust far more efficiently.
     - If proven, Nuclear systems would be well-suited for long-distance space travel due to their good thrust and long specific impulse. However, in regards to lifting rockets, there is reasonable concern that Nuclear-powered propulsion systems would not be well-suited for in-atmosphere operation.
 - Electric systems are incapable of escaping Earth's atmosphere due to extremely low thrust, but are unmatched in efficient, sustained space travel (albeit at a slower pace) due to a very long specific impulse.
     - Most Electric systems are best suited for satellite propulsion due to their great fuel efficiency. The low speed is less of a concern as satellite components are built to last the duration of their mission.
@@ -80,7 +82,7 @@ Tools used:
 - Excel - Reporting output
 - MySQL Server/Workbench - Data storage
 - Python (pandas, pytest) - Data analysis, verification
-- Power BI, Data visualization
+- Power BI - Data visualization
 
 [Read the full report](https://jhekwall.github.io/spacecraft-propulsion-2025/) / [View the report repository](https://github.com/JheKWall/spacecraft-propulsion-2025)
 
@@ -88,19 +90,21 @@ Tools used:
 
 *Project run from 2023-2024*
 
-This project was done for my CSCI Senior Design Project class, with my team consisting of myself and my classmate Vance. Our goal with this project was to determine whether or not Godot was a viable 3D-game-development engine compared to more mainstream game engines such as Unity or Unreal. We developed the same game, a 3D, first-person action platformer, in Godot, Unity, and Unreal and compiled our experiences in developing the game in all three engines. Additionally, we explored various metrics such as whether an engine had licensing fees, how much it cost (in terms of performance and space) to run on a computer, and the quality/quantity of documentation and tutorials (official or community-made).
+This project was done for my CSCI Senior Design Project class, with my team consisting of myself and my classmate Vance. Our goal with this project was to determine whether or not Godot was a viable 3D-game-development engine compared to more mainstream game engines such as Unity or Unreal. We built our game, a 3D first-person action platformer, in Godot over the course of a year as the primary study subject, alongside comparable test builds in Unity and Unreal used to compare specific implementations against, stair-stepping and level loading in particular. We then compiled our experiences across all three engines. Additionally, we explored various metrics such as whether an engine had licensing fees, how much it cost (in terms of performance and space) to run on a computer, and the quality/quantity of documentation and tutorials (official or community-made).
 
 For this project we used three specific versions of these game engines:
-- Godot 4.2.2
+- Godot 4.2.2 (upgraded to Godot 4.3 near the end of development)
 - Unity 2023.1.13f1
 - Unreal Engine 5.3
+
+Note that the Godot upgrade did not affect the comparison or results in any way.
 
 The project yielded the following data:
 - Godot was very light-weight in comparison to the other engines. It was quicker to start up, and took much less storage to install. This allowed us to develop our game from a larger range of devices, from our home desktops to our school-provided checkout laptops.
 - Godot lacked various standard implementations present in the other game engines.
     - One of the more notable examples was stair-stepping. This is essentially how player characters are able to move up stepped surfaces without colliding into them and stopping movement. Unity and Unreal both had default implementations, while we were forced to implement our own (less than optimal) approach in Godot.
 - Godot is completely free and open-source, allowing anyone to contribute to the development of the engine or to use it at no cost.
-    - We ended up submitting our stair-stepping approach to an ongoing discussion about a standard stair-stepping implementation in Godot.
+    - We published our stair-stepping implementation as an open-source demo project on GitHub and the Godot Asset Library, and contributed our implementation notes and a follow-up edge-case analysis to the engine's official feature proposal thread.
     - Other engines such as Unity or Unreal have licensing fees attached to them which adds a monetary cost to using their engine. This cost largely depends on the platforms you're developing for and the scale at which you wish to deploy your game.
 - Generally, Godot has less built-in features and requires a more in-depth understanding of game mechanics as you need to implement them yourself. Despite this, it's relatively easy to learn due to its Python-like programming language (GDScript) and node-scene architecture.
 - Godot's documentation is on-par with Unity and Unreal's documentation. However, in terms of tutorials, Godot falls behind due to its newer age compared to the other development engines.
@@ -125,7 +129,7 @@ Tools used:
 
 
 
-### [Programming Databses in WPF Applications](https://github.com/JheKWall/CW6WPF)
+### [Programming Databases in WPF Applications](https://github.com/JheKWall/CW6WPF)
 
 
 
